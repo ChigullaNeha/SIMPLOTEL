@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.head {
+    width: 400px;
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    background-color: rgb(251, 92, 24);
+
+}
+
+.order {
+    position: relative;
+    bottom: 50px;
+    gap: 50px;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(247, 146, 218), rgb(247, 140, 94), rgb(242, 242, 148));
+    backdrop-filter: blur(10px);
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    margin-top: 100px;
+    position: relative;
+    right: 130px;
+    background-color: white;
+    border-radius: 0px 80px;
+}
+
+.img {
+    padding: 20px;
+    border-radius: 0px 80px;
+}
+
+.order-head {
+    font-size: 40px;
+    color: white;
+    position: relative;
+    left: 38%;
+
+
+}
+
+.order-border {
+    width: 100%;
+    background-color: white;
+    height: 15px;
+    position: relative;
+    top: 100px;
+}
+
+.order-button {
+    font-size: 30px;
+    color: rgb(21, 20, 20);
+    position: relative;
+    left: 2%;
+    bottom: 50px;
+    font-weight: bolder;
+    background-color: rgb(207, 135, 105);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+
+}
