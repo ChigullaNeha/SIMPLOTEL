@@ -1,92 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <!-- Add Tailwind CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-X1nKk9qN5u5r3OFPjtFAKJLgkiGH8h1l3iXwFZ51I9zDLHEU21m2R5UgY1PnNV9K" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet" />
-</head>
+<head> </head>
 
-<body class="bg-gray-100">
-
-    <!-- Navbar -->
-    <nav class="bg-white p-4 shadow">
-        <div class="container mx-auto flex justify-between items-center">
-            <button class="lg:hidden text-black focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-            <!-- Navbar Links -->
-
-            <div class="hidden lg:flex space-x-14 ml-14 items-center">
-                <a href="#" class="text-black-800 text-lg">H o m e</a>
-                <a href="#" class="text-black-800 text-lg">O r d e r</a>
-                <a href="#" class="text-black-800 text-lg">F o o d</a>
-                <a href="#" class="text-black-800 text-lg">R e s t a u r a n t</a>
-                <a href="#" class="text-black-800 text-lg">T e s t i m o n i a l s</a>
-                <a href="#" class="text-black-800 text-lg">C o n t a c t U s</a>
-                <img src="https://th.bing.com/th/id/OIP.sLC5YDvhas9I_UDdAxLmRgHaHa?w=205&h=205&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Phone Icon" class="w-6 h-6 text-black" />
-
-                <img src="https://th.bing.com/th/id/OIP.6Ryeh4IfgDRdpMnp5NrAegHaG7?w=184&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Cart Icon" class="w-6 h-6 text-black" />
-            </div>
-
-        </div>
+<body>
+    <nav class="nav-container">
+        <ul class="ul-container">
+            <li class="li-item">Home</li>
+            <li class="li-item">Order</li>
+            <li class="li-item">Food</li>
+            <li class="li-item">Restaurant</li>
+            <li class="li-item">Testimonials</li>
+            <li class="li-item">Contact us</li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icons" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </ul>
     </nav>
-
-    <!-- Main Section -->
-    <div class="container mx-auto">
-        <!-- Responsive Image -->
-        <img src="./img/img1.jpg" alt="Main Image" class="w-full h-auto">
-        <h1 class=" text-gray-700 text-lg px-4 head">LOREM IPSUM
-            <p class="  text-white-700 text-lg px-4 ">
-                Lorem ipsum has been the industry's standard dummy text ever since 1500s, when
-                an unknown printer took a galley of type and scrambled it to make a type specimen book
-            </p>
-        </h1>
+    <div class="container">
+        <div class="content-container">
+            <h1 class="heading">LOREM IPSUM</h1>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                id est vitae dolor rhoncus tristique. Maecenas metus quam,
+                rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+                dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+                Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+                Sed pulvinar, massa ac porta viverra.</p>
+            <button class="button">Click Me</button>
+        </div>
         <div>
-            <!-- Card Section -->
-            <div class="flex flex-wrap justify-center mt-8 space-x-4 order ">
-                <h1 class="order-border"></h1>
-                <h1 class="order-head"> Order Now</h1>
-                <!-- Card 1 -->
-                <div class="max-w-sm rounded overflow-hidden shadow-lg card">
-                    <img src="./img/img4.jpg" alt="Card 1" class="w-full h-48 object-cover img">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">BURGER</div>
-                        <p class="text-gray-700 text-base">Lorem ipsum has been the industry's standard dummy text</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="max-w-sm rounded overflow-hidden shadow-lg card">
-                    <img src="./img/img2.jpg" alt="Card 2" class="w-full h-48 object-cover">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">PIZZA</div>
-                        <p class="text-gray-700 text-base">Lorem ipsum has been the industry's standard dummy text</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="max-w-sm rounded overflow-hidden shadow-lg card">
-                    <img src="./img/img3.jpg" alt="Card 3" class="w-full h-48 object-cover">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">PASTA</div>
-                        <p class="text-gray-700 text-base">Lorem ipsum has been the industry's standard dummy text</p>
-                    </div>
-
-                </div>
-                <button class="order-button">Order</button>
+            <img src="https://res.cloudinary.com/dedvz7flb/image/upload/v1705467170/Screenshot_971_kblm91.png" class="first-image" />
+        </div>
+    </div>
+    <div class="scnd-container">
+        <div class="scnd-one-container">
+            <div>
+                <img src="https://res.cloudinary.com/dedvz7flb/image/upload/v1705468591/Screenshot_972_sqlqvc.png" class="scnd-image" />
+                <br />
+                <img src="https://res.cloudinary.com/dedvz7flb/image/upload/v1705468596/Screenshot_973_gpld2p.png" class="scnd-image" />
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/dedvz7flb/image/upload/v1705468608/Screenshot_974_bvtosl.png" class="thrd-image" />
+            </div>
+        </div>
+        <div class="thrd-container">
+            <p class="scnd-p-heading">LOREM IPSUM</p>
+            <h1 class="scnd-heading">LOREM IPSUM SET ADEMIR</h1>
+            <div class="arrow-container">
+                <p class="scnd-c-heading">Click</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg>
             </div>
         </div>
     </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
 </body>
 
 </html>
